@@ -1,5 +1,6 @@
 启动sentry
 ===========
+#. 安装 `sudo easy_install -UZ sentry`
 #. `sentry createsuperuser` 创建管理员帐号
 
 
