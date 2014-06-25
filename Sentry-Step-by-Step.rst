@@ -18,3 +18,4 @@
 - `DatabaseError('database is locked',)` , django数据库backends不要使用sqlite3, 改用其它RDBMS可解决这个问题
 - `DatabaseError: (1213, 'Deadlock found when trying to get lock; try restarting transaction')`, 
   通过 `easy_install -UZ sentry` 重新安装问题消失
+- 在django runserver启动server时能正常发送exception，在uWSGI模式下不能发送exception，升级django至1.4以上版本能解决该问题
