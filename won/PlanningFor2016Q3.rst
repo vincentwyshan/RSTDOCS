@@ -39,6 +39,26 @@ also he will work together with US colegues.
 #. VPN, employee accounts, etc.
 
 
+William Oneil Company training
+-------------------------------
+
+To learn topics below:
+
+    - Introduce colegues
+    - How to use VPN
+    - Security management(database/software), and how to using database, software, etc.
+    - How to apply resource (server/network/equipment, etc.)
+    - Cooperation in software development, including:
+
+        + Create development environment
+        + Submit source code
+        + Tasks assignment, management
+        + Testing
+        + Issue tracing
+        + Release source code
+        + Others need to know
+
+
 Recruitment
 ------------
 
@@ -85,9 +105,11 @@ Brief introduction:
 
 #. Start from WONDB
 #. Including:
+
     #. US market database
     #. US fundamental database
     #. Also US historical price(quotes) database
+
 #. Rich documentation
 #. Localization needs, we should translate some English literal data to chinese
 
@@ -112,6 +134,7 @@ We should have a database publish tool(or system), which is in charge of
 publishing and delivering data to our clients(or development projects). 
 
 This publish tool should be able to do:
+
     #. Have a publish server, and a client to receive data from publish server
     #. Transfer data to primary databases, including SQL Server, Oracle, MySQL
     #. Permission control
@@ -143,13 +166,18 @@ Hawking.Wan will make a detailed plan for this part.
 **The objectives:**
 
 - IT/network architecture
+
     #. network from WON US server to Nasdaq 
     #. network between WON US and WON China (Aliyun?)
+
 - Researching Nasdaq streaming data feed
+
     #. Learn the Nasdaq streaming protocol and data format
     #. Do we need to convert the Nasdaq data format to particular format(our 
        format or client's format)
+
 - Design and implement streaming data distribution service software
+
     #. We should have a distribution service to distribute the streaming quotes
        data
     #. Authorization is the necessary feature
@@ -171,14 +199,18 @@ What's the product form
 How to processing IBD news(localization)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 - A database to store IBD news
+
     + Grab all English version IBD news, fetching from IBD database directly or 
       fetching from news feed
     + Design data tables for Chinese version IBD news 
+
 - Using an editing UI to translate IBD news
+
     + Reading and picking English IBD news
     + Translating, Editing
     + Version control, permission control
     + Publish workflow
+
 - A distribution service(system)
 
 
@@ -188,6 +220,7 @@ A-stock database(CNDB)
 Brief introduction
 ~~~~~~~~~~~~~~~~~~~~~
 Listed are primary A-stock data categories:
+
     #. IPO
     #. Shareholders
     #. Financial statements
@@ -206,6 +239,7 @@ How to create CNDB database
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Convert vendor's database to our database:
+
     - Design our database structure based on vendor's database structure
     - Convert one or multiple verdors's database to our database
 
@@ -213,11 +247,13 @@ How to use CNDB database
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 For panary and marketsmith:
+
     + Choice 1, we can create datafeed api to fulfill the specific data format
       in WONDB
     + Choice 2, we can `publish our CNDB database <#how-to-publish-usdb>`_ to WONDB team
 
 For other application scenarios:
+
     + publish/subscribe our CNDB database
 
 
@@ -296,9 +332,12 @@ MarketSmith
 
 MarketSmith products:
     - MS HK (iOS/Android/Web)
+
         + Mobile (Android/iOS)
         + Web (MS Global Desktop Tool)
+
     - MS Domestic
+
         + Mobile (Android/iOS/Web)
         + Web (MS Tool)
 
@@ -308,9 +347,11 @@ Objectives
 - We need to partly take over outsourced work, especially the core modules/features, 
   including MSHK and MSDomestic
 - Localize MarketSmith products
+
     + MS HK (iOS/Android/Web)
-    + Support both simplified chinese and traditional chinese
-- Fully support China A-stock and Hongkong market, including fundamental, realtime-price, ownership,
+    + Support both simplified chinese and traditional chinese language
+
+- Fully support China A-stock and Hongkong stock, including fundamental, realtime-price, ownership,
   finiancial and price estimates, etc.
 
 Resource needs
@@ -327,6 +368,7 @@ Objectives
 ------------
 - Partly take over outsourced work
 - Localize panary products
+
     + Support both simplified chinese and traditional chinese language
     + Fully support China A-stock and Hongkong market 
 
@@ -377,11 +419,11 @@ To joseph: we can put listed targets in above timelines
     - Buy HK-stock data (Joseph, Vincent)
     - US realtime-streaming data (USQUOTE) (Hawking, Vincent)
         + Researching on network architecture
-        + contact with data vendor(Nasdaq?)
+        + Get contact with data vendor(Nasdaq?)
         + Researching on realtime-streaming data protocol and format
-     - Hongkong realtime-streaming data (HKQUOTE) (Hawking, Vincent)
+    - Hongkong realtime-streaming data (HKQUOTE) (Hawking, Vincent)
         + Researching on network architecture
-        + contact with data vendor(Etnet?)
+        + Get contact with data vendor(Etnet?)
         + Researching on realtime-streaming data protocol and format
     - Data development (USDB) (Vincent)
     - Data development (CNDB) (Vincent)
